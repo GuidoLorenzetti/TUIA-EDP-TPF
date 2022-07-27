@@ -1,3 +1,4 @@
 #!/bin/bash
 
-editado por mica
+grep -H -oP '\b[A-Z0-9_]*[A-Z]+[A-Z0-9_]*\b' *
+sol
