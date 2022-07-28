@@ -1,12 +1,20 @@
 #!/bin/bash
 
 
-variable=$(<config.txt)
+#variable=$(<config.txt)
 
 
-minusculas=$(echo $variable | tr '[:upper:]' '[:lower:]' && echo $variable | tr '[:lower:]' '[:upper:]')
+#minusculas=$(echo $variable | tr '[:upper:]' '[:lower:]' && echo $variable | tr '[:lower:]' '[:upper:]')
+#file=$(file.txt)
 
+file=$(<file.txt)
 
-echo "$variable" | tr '[:upper:]' '[:lower:]'
+for word in $file 
+do
+  echo $word | tr '[:upper:]' '[:lower:]' 
+done 
 
-echo "$variable" | tr '[:lower:]' '[:upper:]'
+for word in $file
+do 
+  echo $word | tr '[:lower:]' '[:upper:]'
+done

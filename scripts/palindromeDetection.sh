@@ -1,13 +1,19 @@
 #!/bin/bash
 
-if [ $# -ne 1 ]
-then 
-     echo "Ingrese un argumento"
-else
-     if [ $1 == $(echo $1 | rev) ]
-     then
-          echo "Es un palindromo"
-     else
-          echo "No es un palindromo"
-     fi
-fi
+
+sol 
+
+file=$(<file.txt)
+
+for word in $file 
+do
+    grep -i $word
+    if  [ $word == $(echo $1 | rev) | grep -i ]
+    then
+         echo "Es un palindromo"
+    else
+         echo "No es un palindromo"
+    fi
+done
+
+
