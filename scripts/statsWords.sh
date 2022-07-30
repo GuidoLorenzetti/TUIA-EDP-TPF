@@ -1,6 +1,6 @@
 #!/bin/bash/
 
-texto=$(</home/runner/TUIA-EDP-TPF/Texto/texto.txt)
+texto=$(</home/runner/TUIA-EDP-TPF/Textos/texto.txt)
 
 cont=0
 long=0
