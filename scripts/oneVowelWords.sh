@@ -12,7 +12,11 @@ do
   fi
 done
 
-cat lista1 >> lista.txt
+cat lista1.txt | grep a | grep -v e | grep -v i | grep -v o | grep -v u >> lista.txt
+cat lista1.txt | grep e | grep -v a | grep -v i | grep -v o | grep -v u >> lista.txt
+cat lista1.txt | grep i | grep -v e | grep -v a | grep -v o | grep -v u >> lista.txt
+cat lista1.txt | grep o | grep -v a | grep -v i | grep -v e | grep -v u >> lista.txt
+cat lista1.txt | grep u | grep -v a | grep -v i | grep -v o | grep -v e >> lista.txt
 
-
-cat lista.txt | sort 
+echo Las palabras monovocalicas son:
+cat lista.txt | sort -n | uniq 
