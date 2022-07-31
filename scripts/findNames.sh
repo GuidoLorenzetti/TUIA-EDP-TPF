@@ -13,4 +13,6 @@
 
 #grep -P '(^[\s]+[A-Z][a-z]+)|(^[A-Z][a-z]+)'
 
-grep '\b[A-Z][a-z].*?\b' file.txt
+hola=grep '\b[A-Z][a-z].*?\b' /home/runner/TUIA-EDP-TPF/Textos/texto.txt
+
+echo $hola
