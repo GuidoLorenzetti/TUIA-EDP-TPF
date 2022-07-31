@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#sol
+
 
 
 #$find / -name ˈ[A-Z]*ˈ 
@@ -13,6 +13,16 @@
 
 #grep -P '(^[\s]+[A-Z][a-z]+)|(^[A-Z][a-z]+)'
 
-hola=grep '\b[A-Z][a-z].*?\b' /home/runner/TUIA-EDP-TPF/Textos/texto.txt
+texto=$(</home/runner/TUIA-EDP-TPF/Textos/texto.txt)
 
-echo $hola
+
+rm lista1.txt
+
+for i in $texto:
+do
+  echo $i >> lista1.txt
+done
+
+echo Nombres encontrados:
+cat lista1.txt | grep -P '\b[A-Z][a-z].*?\b' | sort -n
+

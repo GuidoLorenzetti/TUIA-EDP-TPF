@@ -26,10 +26,12 @@ oso
 casa
 iriiii
 solkido@gmail.com
+solkido@gmail.com
 Sol
 Hola
 Neuquen
 radar
 Radar
 HOLA
-SOL:
+SOL
+hola@gmail.com:

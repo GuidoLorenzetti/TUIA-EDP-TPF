@@ -9,13 +9,12 @@
 
 file=$(</home/runner/TUIA-EDP-TPF/Textos/texto.txt)
 
-for word in $file 
+for word in $file:
 do
   echo $word | tr '[:upper:]' '[:lower:]' 
-  echo $word | tr '[:lower:]' '[:upper:]'
 done 
 
-#for word in $file
-#do 
-  #echo $word | tr '[:lower:]' '[:upper:]'
-#done
+for word in $file:
+do 
+  echo $word | tr '[:lower:]' '[:upper:]'
+done
