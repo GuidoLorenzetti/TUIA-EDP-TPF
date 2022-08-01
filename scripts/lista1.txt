@@ -1,7 +1,12 @@
-casa casa casa
 casa
-iji iji
-iji iji iji
+casa
+casa
+casa
+iji
+iji
+iji
+iji
+iji
 mica
 mica
 mica
@@ -32,10 +37,4 @@ SOL
 hola@gmail.com
 tuia@gmail.com
 Reconócér
-Ácido
-áCIDO
-osÓ
-Óso
-acÍdo
-osó
-ACíDO
+Óso:
