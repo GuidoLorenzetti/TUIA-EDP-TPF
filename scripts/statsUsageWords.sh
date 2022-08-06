@@ -1,7 +1,6 @@
 #!/bin/bash
 
-texto=$(</home/runner/TUIA-EDP-TPF/Textos/texto.txt)
-rm lista1.txt
+texto=$(<$1)
 for i in $texto;
 do
   if [ ${#i} -ge 4 ];
