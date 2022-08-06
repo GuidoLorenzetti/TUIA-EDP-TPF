@@ -1,16 +1,16 @@
 #!/bin/bash
 
-#sol
+
+texto=$(</home/runner/TUIA-EDP-TPF/Textos/texto.txt)
 
 
-#$find / -name ˈ[A-Z]*ˈ 
+rm lista1.txt
 
-#grep -E '^[[:upper:]' file.txt
+for i in $texto:
+do
+  echo $i >> lista1.txt
+done
 
-#grep -oP "\w*[A-Z]+\w*" yourfile.txt
+echo Nombres encontrados:
+cat lista1.txt | grep -P '\b[A-Z][a-z].*?\b' | sort -n
 
-#grep -o '\<[A-Z][a-z]*\>' file.txt
-
-#grep -P '(^[\s]+[A-Z][a-z]+)|(^[A-Z][a-z]+)'
-
-grep '\b[A-Z][a-z].*?\b' file.txt

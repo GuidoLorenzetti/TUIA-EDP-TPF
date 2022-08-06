@@ -1,19 +1,14 @@
 #!/bin/bash
 
 
-sol 
 
-file=$(<file.txt)
+function palindromo
+{
+    grep -oiE '[a-z]{3,}' "$@" | tr '[:upper:]' '[:lower:]' | sed 's/é/e/g' | sed 's/á/a/g'  | sed 's/í/i/g' | sed 's/ó/o/g'  | sed 's/ú/u/g' | sed 's/É/E/g'  | sed 's/Á/A/g'  | sed 's/Í/I/g'  | sed 's/Ó/O/g' | sed 's/Ú/Ú/g'  | while read -r word; do
+        [[ $word == $(rev <<< "$word") ]] && echo "$word"
+    done
+}
 
-for word in $file 
-do
-    grep -i $word
-    if  [ $word == $(echo $1 | rev) | grep -i ]
-    then
-         echo "Es un palindromo"
-    else
-         echo "No es un palindromo"
-    fi
-done
-
+echo Palabras palíndromo:
+palindromo $"/home/runner/TUIA-EDP-TPF/Textos/texto.txt"
 
