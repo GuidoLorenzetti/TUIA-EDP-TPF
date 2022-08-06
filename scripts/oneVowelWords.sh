@@ -2,8 +2,8 @@
 
 texto=$(<$1)
 
-echo > lista1.txt
-echo > lista.txt
+cat /dev/null > lista1.txt
+cat /dev/null > lista.txt
 
 for i in $texto;
 do

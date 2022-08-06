@@ -14,12 +14,10 @@ read -p "Ingrese P para parrafos, O para oraciones: " opc
 
 if [ "$opc" = "O" ]
 then
-  echo entre O
   cat lista1.txt | sed 's/[.!?]  */&\n/g' > lista.txt
 fi
 if [ "$opc" = "P" ]
 then
-  echo entre P
   cat lista1.txt > lista.txt
 fi
 

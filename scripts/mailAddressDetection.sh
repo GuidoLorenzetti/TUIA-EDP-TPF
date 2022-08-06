@@ -2,7 +2,7 @@
 
 texto=$(<$1)
 
-echo > lista1.txt
+cat /dev/null > lista1.txt
 echo 
 for i in $texto:
 do

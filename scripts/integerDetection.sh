@@ -2,7 +2,7 @@
 
 texto=$(<$1)
 
-echo > lista1.txt
+cat /dev/null > lista1.txt
 for i in $texto:
 do
   if [[ "$i" =~ ^[0-9]+$ ]];

@@ -3,7 +3,7 @@
 
 texto=$(<$1)
 
-echo > lista1.txt
+cat /dev/null > lista1.txt
 
 read -p "Inserte primer cadena: " cad1
 read -p "Inserte segunda cadena: " cad2
