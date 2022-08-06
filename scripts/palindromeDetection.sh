@@ -1,6 +1,6 @@
 #!/bin/bash
 
-
+texto=$1
 
 function palindromo
 {
@@ -10,5 +10,5 @@ function palindromo
 }
 
 echo Palabras palíndromo:
-palindromo $"/home/runner/TUIA-EDP-TPF/Textos/texto.txt"
+palindromo $texto
 

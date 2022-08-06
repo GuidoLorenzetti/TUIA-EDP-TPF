@@ -14,6 +14,7 @@ menu
 while [ $opc -ne 15 ];
 do
   scripts $opc $dir
+  echo 
   menu
 done
 

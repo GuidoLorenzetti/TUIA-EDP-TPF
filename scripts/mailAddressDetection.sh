@@ -1,7 +1,6 @@
 #!/bin/bash
 
-texto=$(</home/runner/TUIA-EDP-TPF/Textos/texto.txt)
-
+texto=$(<$1)
 
 rm lista1.txt
 
