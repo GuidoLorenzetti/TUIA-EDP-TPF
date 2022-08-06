@@ -12,7 +12,3 @@ done
 
 echo Emails encontrados:
 cat lista1.txt | grep -o '[[:alnum:]+\.\_\-]*@[[:alnum:]+\.\_\-]*'  | uniq -i
-
-
-
-  

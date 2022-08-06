@@ -29,7 +29,7 @@ do
 done
 
 promedio=$(($long/$cont))
-
+echo
 echo La palabra mas corta es $corta
 echo La palabra mas larga es $larga
-echo El promedio de longitud es $promedio
+echo El promedio de longitud es de $promedio caractéres por palabra.

@@ -19,5 +19,6 @@ cat lista1.txt | grep -i i | grep -v e | grep -v a | grep -v o | grep -v u | gre
 cat lista1.txt | grep -i o | grep -v a | grep -v i | grep -v e | grep -v u | grep -v á | grep -v í | grep -v é | grep -v ú | grep -v A | grep -v I | grep -v E | grep -v U >> lista.txt
 cat lista1.txt | grep -i u | grep -v a | grep -v i | grep -v o | grep -v e | grep -v á | grep -v í | grep -v ó | grep -v é | grep -v A | grep -v I | grep -v O | grep -v E >> lista.txt
 
+echo
 echo Las palabras monovocalicas son:
 cat lista.txt | sort -n | uniq 
