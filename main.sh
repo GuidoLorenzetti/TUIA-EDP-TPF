@@ -6,12 +6,13 @@ echo La aplicación consiste en diferentes scripts para el análisis de un texto
 echo
 
 texto
-cd /home/runner/TUIA-EDP-TPF/scripts
+cd ..
+cd scripts/
 echo El siguiente menú presenta las diferentes opciones para selección de scripts. Elija la opción deseada ingresando el número correspondiente.
 echo
 menu
 
-while [ $opc -ne 15 ];
+while [[ $opc -ne 15 ]];
 do
   scripts $opc $dir
   echo 

@@ -13,3 +13,4 @@ done
 echo 
 echo La lista ordenada de enteros es:
 cat lista1.txt | sort -n -u
+

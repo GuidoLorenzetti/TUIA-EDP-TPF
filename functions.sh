@@ -71,12 +71,12 @@ function scripts {
 }
 
 function texto {
-  cd /home/runner/TUIA-EDP-TPF/Textos/
+  cd Textos/
   echo Archivos disponibles para analizar:
   ls
   echo Seleccione el archivo:
   read txt
-  dir=/home/runner/TUIA-EDP-TPF/Textos/$txt
+  dir=$(pwd)/$txt
 }
 
 function palindromo

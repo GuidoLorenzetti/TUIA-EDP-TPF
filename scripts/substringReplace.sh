@@ -14,7 +14,7 @@ do
   
 done
 
-lista=$(</home/runner/TUIA-EDP-TPF/scripts/lista1.txt)
+lista=$(<$(pwd)/lista1.txt)
 
 for x in $lista
 do

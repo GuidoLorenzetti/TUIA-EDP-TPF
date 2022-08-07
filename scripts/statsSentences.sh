@@ -4,7 +4,7 @@ texto=$1
 
 cat $texto | sed 's/[.!?]  */&\n/g' > lista1.txt
 
-lista=$(</home/runner/TUIA-EDP-TPF/scripts/lista1.txt)
+lista=$(<$(pwd)/lista1.txt)
 
 cont=0
 suma=0

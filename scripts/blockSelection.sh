@@ -24,7 +24,7 @@ fi
 read -p "Ingrese el numero de linea: " opc
 
 cont=1
-lista=/home/runner/TUIA-EDP-TPF/scripts/lista.txt
+lista=$(pwd)/lista.txt
 echo La linea elegida es:
 while IFS= read -r line
 do
