@@ -18,7 +18,6 @@ function menu {
   echo 14. integerDetection.sh
   echo 15. Salir
   read opc
-  return $opc
 }
 
 function scripts {

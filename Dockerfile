@@ -1,14 +1,7 @@
-FROM ubuntu
-MAINTAINER Kidonakis, Lorenzetti, Pozzo
-
-RUN apt-get update && apt-get install -y
-
-COPY main.sh /main.sh
-COPY scripts /scripts
-COPY Textos /Textos
-COPY functions.sh /functions.sh
+FROM ubuntu:22.04
+LABEL mantainer "Kidonakis, Lorenzetti, Pozzo"
+RUN apt-get update && apt-get install --no-install-recommends -y && apt-get clean && rm -rf /var/lib/apt/lists/*
+COPY . . 
+WORKDIR /
 RUN chmod +x /main.sh
-RUN /main.sh
-#CMD /main.sh
-
-#CMD ["bash", "/main.sh"]
+CMD ["bash", "/main.sh"]

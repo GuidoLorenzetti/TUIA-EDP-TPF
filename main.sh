@@ -10,13 +10,12 @@ cd ..
 cd scripts/
 echo El siguiente menú presenta las diferentes opciones para selección de scripts. Elija la opción deseada ingresando el número correspondiente.
 echo
-menu
 
 while [[ $opc -ne 15 ]];
 do
-  scripts $opc $dir
-  echo 
-  menu
+	scripts $opc $dir
+	echo 
+	menu
 done
 
 echo Cerrando
