@@ -4,8 +4,6 @@ texto=$1
 
 cat $texto | sed 's/[.!?]  */&\n/g' > lista1.txt
 
-lista=$(<$(pwd)/lista1.txt)
-
 cont=0
 suma=0
 while IFS= read -r line
@@ -21,7 +19,6 @@ do
   fi
   if [ ${#line} -lt ${#min} ] && [ ${#line} -gt 1 ]
   then
-    echo ${#line}
     min=$line
   fi
   let cont=$cont+1
